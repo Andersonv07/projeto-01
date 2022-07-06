@@ -1,0 +1,375 @@
+@media only screen and (max-width: 450px) {
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.container img{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    display:block;
+   margin: auto;
+    width: 100%;
+    
+}
+
+.lateral{
+  display: none;
+
+}
+.lateral2{
+  display: none;
+  position: absolute;
+  background-color: white;
+  margin-left: -300px;
+  z-index: 4;
+
+}
+.selecionado{
+    background-color: white;
+    color: black !important;
+    padding: 10px;
+  border-radius: 5px
+}
+
+.calçado-sec{
+    border: 0.9px solid #4f4f4fd2;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    
+    
+}
+.calçado-sec p{ 
+ margin-bottom: 10px;
+ font-size: 1.2em;
+}
+.calçado-sec h3{
+    margin-bottom: 10px;
+    font-size: 1.5em;
+   
+}
+.filtrar3 ul{
+    display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    gap: 20px;
+    
+
+}
+.filtrar3 li{
+    margin: 10px;
+}
+.filtrar3 span{
+    padding: 5px 10px;
+    box-shadow:0px 0 3px 2px #2c2c2c70;
+    align-items: center;
+    cursor: pointer;
+   
+}
+.filtrar3 span:hover{
+    box-shadow:4px 4px 0 1px #000000;
+    
+
+}
+.preco ul{
+    list-style: none;
+    box-shadow:0px 0 3px 3px #2c2c2c70;
+    border-radius: 5px;
+    overflow: auto;
+    height:200px
+}
+.preco li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.escolher{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+.filtrar2{
+  display:block;
+}
+.btn-escolher{
+    background-color: #c70000;
+    color: white;
+    border-radius: 2px;
+    padding: 6px;
+    font-family: nav;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+.btn-escolher.active{
+    background-color: #000000 !important;
+   
+}
+.ordem{
+  position: relative;
+  background: white;
+}
+
+
+.list-drop{
+    display: none;
+    position: absolute;
+    box-shadow:0px 0 3px 3px #2c2c2c70;
+    background: white
+}
+.list-drop ul{
+    list-style: none;
+    padding: 10px;
+}
+.list-drop li{
+    padding: 5px;
+    
+}
+.list-drop li:hover {
+    background-color: #000000;
+   color: white;
+    
+  }
+  .list-drop a:hover {
+    background-color: #000000;
+   color: white;
+    
+  }
+
+  .paginas {
+    display: none;
+  }
+  .pagcel{
+    display: block;
+  }
+.paginas a {
+    float: left;
+    font-family: nav;
+    font-size: 1.2em;
+    padding: 5px 13px;
+    text-decoration: none;
+    transition: background-color .4s;
+  }  
+  .paginas a.active {
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+    color: white;
+  }
+  .paginas a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 2px;
+  }
+  
+.titulos{
+    font-family:nav;
+    font-size: 40px;
+}
+.linhas{
+    width: 100px;
+    height: 4px;
+    background-color: #1b1b1b;;
+    border-radius: 5px;
+  }
+
+.grid-container-main {
+    display:grid;
+    
+    grid-template-columns: auto auto;
+    gap:40px;
+    margin: auto;
+    /* background-color: #2196F3; */
+    padding: 20px;
+    width: auto;
+  }
+
+  .card{
+    text-align: center;
+    padding: 5px;
+    /* border: 1px solid black; */
+  }
+  .card:hover{
+    box-shadow:0px 0 8px 2px #2c2c2c70;
+ 
+  }
+  .preco2{
+    margin-top: 30px;
+  }
+  .preco2 p{
+    margin-top:10px;
+  }
+  .preco2 span{
+    font-weight: 600;
+  }
+  .preco2:hover{
+    opacity: 0.5;
+  }
+  .compre{
+    display: flex;
+    background-color: #1b1b1b;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 6px;
+    margin: 50px 0 20px 0 ;
+  }
+ 
+  .compre img{
+    width: 15%;
+    padding: 5px;
+    margin-right: 20px; 
+  }
+
+  .img-card{
+    justify-content: center;
+    height: 180px;
+    padding: 5px;
+  
+  }  
+  .valor{
+    font-size: 25px;
+    font-weight:600;
+  }
+
+  .email{
+    display: block;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #1b1b1b;
+    padding: 20px;
+    color: white;
+  
+  }
+  .inp-email{
+    width: 100%;
+    background-color: antiquewhite;
+  }
+  .inp-email input{
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .inp-email button{
+    display: none;
+    margin-top: 8px;
+    /* margin-left: -80px; */
+    background-color: #c70000;
+    color: white;
+    padding: 8px;
+    font-family: nav;
+    font-weight: bold;
+    font-size: 20px;
+    font-size: auto;
+    border: none;
+  }
+  .inp-email2{
+    display: block;
+    height: 40px;
+    
+  }
+  .inp-email2 input{
+    width: 100%;
+    height: 40px;
+  }
+  
+  .inp-email-button button{
+    width: 100%;
+    height: 40px;
+    background-color: #c70000;
+    color: white;
+    padding: 8px;
+    font-family: nav;
+    font-weight: bold;
+    font-size: 20px;
+    font-size: auto;
+    border: none;
+  }
+  
+  
+  .grid-container-footer{
+    display:block;
+    padding: 5px;
+      grid-template-columns: auto auto auto;
+      gap:30px;
+      background-color: #1b1b1b;
+      color: white;
+      align-items: center;
+      padding: 20px;
+  
+  }
+  .receba span{
+    color: #c70000;
+  }
+  .tipo-pagamento{
+    margin: auto;
+    margin-top:20px;
+    width: 100%;
+  }
+  .tipo-pagamento img{
+    width: 100%;
+  }
+  .sobre-o-site{
+    text-align: justify;
+    margin-top:20px;
+  }
+  .sobre-o-site h3{
+    text-align: center;
+    font-family: nav;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+  }
+  .redesociais{
+    display: grid;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    gap:5px;
+    grid-template-columns:40px 40px 40px;
+    grid-template-rows: 40px 40px 40px ;
+  
+  }
+  .redesociais img{
+    margin: 5px;
+  }
+  .fim{
+    background-color: #c70000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  .paginas2 {
+    display: flex;
+    justify-content: center;
+    margin:10px;
+
+  }
+  .paginas2 a {
+  
+    font-family: nav;
+    font-size: 1.2em;
+    padding: 5px 13px;
+    text-decoration: none;
+    transition: background-color .4s;
+  }  
+  .paginas2 a.active {
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+    color: white;
+  }
+  .paginas2 a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 2px;
+  }
+}
+ 
+ 
+
+
+ 

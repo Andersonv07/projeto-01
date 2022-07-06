@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../flaviticon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style_max-width_1000px.css" />
+    <link rel="stylesheet" href="../css/style_max-width_450px.css" />
+    <link rel="stylesheet" href="../css/tenis.css" />
+    <link rel="stylesheet" href="../css/carrossel.css" />
+    <link rel="stylesheet" href="../css/tenis _max-width_1000px.css">
+    <link rel="stylesheet" href="../css/tenis _max-width_450px.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="..https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/nav_fixo.js" defer></script>
+    <script src="../js/carrossel.js" defer></script>
+    <script src="../js/Dropdown.js" defer></script>
+    <!-- icons -->
+    <script src="..https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Snearkers Co.</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerr">
+        <div class="table2 col-t-2">
+          <div class="menu_linha2" onclick="menu_mob()">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+          </div>
+        </div>
+
+        <div class="col-4 col-s-12 col-t-8 logo">
+          <img
+            class="logo"
+            src="../fotos/android-chrome-192x192.png "
+            alt="/"
+            width="100"
+          />
+        </div>
+        <div class="table2 col-t-2">
+          <img
+            class="imagens"
+            src="../fotos/carrinho-de-compras-cheio.png"
+            alt=""
+            width="30"
+            height="40"
+          />
+        </div>
+        <div class="table2 col-t-12" o>
+          <div class="col-t-12 prompt">
+            <input
+              class="input_text"
+              type="text"
+              placeholder="   O que você procura?"
+            />
+
+            <button class="buscar">Buscar</button>
+          </div>
+        </div>
+
+        <div class="col-s-12 table">
+          <div class="menu_linha" onclick="menu_mob()">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+          </div>
+
+          <div class="col-8 col-s-10">
+            <div class="col-12 prompt">
+              <input
+                class="input_text"
+                type="text"
+                placeholder="   O que você procura?"
+              />
+
+              <button class="buscar">Buscar</button>
+            </div>
+          </div>
+          <div class="col-6 col-s-2 ajuda">
+            <div class="col-2 ajuda2">
+              <img src="../fotos/questao.png" width="35" height="35" alt="/" />
+              <p>ajuda</p>
+            </div>
+            <div class="col-2 ajuda2">
+              <img src="../fotos/user.png" alt="/" />
+              <p>entrar</p>
+            </div>
+            <img
+              class="imagens"
+              src="../fotos/carrinho-de-compras-cheio.png"
+              alt=""
+              width="30"
+              height="40"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="navv col-12 col-s-12 col-t-6">
+        <a href="#">
+          <div class="col-s-12 menu3">
+            <img src="../fotos/user.png" alt="/" />
+            <div>
+              <p>Bem-vindo !</p>
+              <p class="entre">Entre ou Cadastre-se</p>
+            </div>
+          </div>
+        </a>
+        <ul class="col-12col-s-12 navv2">
+          <a href="#">
+            <li class="menu2 selecionado">Tênis</li>
+          </a>
+          <a href="#">
+            <li class="menu2">Roupas</li>
+          </a>
+          <a href="#">
+            <li class="menu2">Acessórios</li>
+          </a>
+          <a href="#">
+            <li class="menu2">Nike</li>
+          </a>
+          <a href="#">
+            <li class="menu2">Adidas</li>
+          </a>
+          <a href="#">
+            <li class="menu2">Puma</li>
+          </a>
+          <a href="#">
+            <li class="menu2" id="oferta">Sale</li>
+          </a>
+          <a href="#">
+            <li class="menu2">The north face</li>
+          </a>
+          <a href="#">
+            <li class="menu2">New Balance</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+ <main>
+    <!-- carrossel -->
+    <section class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="../fotos/50_desconto.gif" style="width: 100%" />
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="../fotos/cactus_jack.webp" style="width: 100%" />
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="../fotos/75_desconto.webp" style="width: 100%" />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="../fotos/new_balance.webp" style="width: 100%" />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </section>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <!-- fim carrossel -->
+
+    <section class="container">
+      <section class="lateral col-3 col-s-12">
+        <div class="calçado-sec">
+          <h3>Calçados</h3>
+          <p>botas</p>
+          <p>chinelos e sandálias</p>
+          <p>tênis</p>
+        </div>
+        <div class="calçado-sec filtrar1">
+          <h3>Filtrar por Tamanho</h3>
+          <ul>
+            <li class="tamanho"><span> p </span></li>
+            <li class="tamanho"><span> M </span></li>
+            <li class="tamanho"><span> G </span></li>
+            <li class="tamanho"><span> GG </span></li>
+            <li class="tamanho"><span> 17 </span></li>
+            <li class="tamanho"><span> 18 </span></li>
+            <li class="tamanho"><span> 20 </span></li>
+            <li class="tamanho"><span> 21 </span></li>
+            <li class="tamanho"><span> 22 </span></li>
+            <li class="tamanho"><span> 24 </span></li>
+            <li class="tamanho"><span> 25 </span></li>
+            <li class="tamanho"><span> 26 </span></li>
+            <li class="tamanho"><span> 27 </span></li>
+            <li class="tamanho"><span> 28 </span></li>
+            <li class="tamanho"><span> 29 </span></li>
+            <li class="tamanho"><span> 30 </span></li>
+            <li class="tamanho"><span> 31 </span></li>
+            <li class="tamanho"><span> 32 </span></li>
+            <li class="tamanho"><span> 33 </span></li>
+            <li class="tamanho"><span> 34 </span></li>
+            <li class="tamanho"><span> 35 </span></li>
+            <li class="tamanho"><span> 36 </span></li>
+            <li class="tamanho"><span> 37 </span></li>
+            <li class="tamanho"><span> 38 </span></li>
+            <li class="tamanho"><span> 39 </span></li>
+            <li class="tamanho"><span> 40 </span></li>
+            <li class="tamanho"><span> 41 </span></li>
+            <li class="tamanho"><span> 42 </span></li>
+            <li class="tamanho"><span> 43 </span></li>
+            <li class="tamanho"><span> 44 </span></li>
+            <li class="tamanho"><span> 45 </span></li>
+            <li class="tamanho"><span> 46 </span></li>
+            <li class="tamanho"><span> 47 </span></li>
+            <li class="tamanho"><span> 48 </span></li>
+          </ul>
+        </div>
+
+        <div class="calçado-sec preco">
+          <h3>Filtrar por Marca</h3>
+          <ul>
+            <li>de R$ 70,00 até R$ 99,99 (3)</li>
+            <hr />
+            <li>de R$ 100,00 até R$ 199,99 (8)</li>
+            <hr />
+            <li>de R$ 200,00 até R$ 399,99 (42)</li>
+            <hr />
+            <li>de R$ 400,00 até R$ 599,99 (83)</li>
+            <hr />
+            <li>de R$ 600,00 até R$ 999,99 (142)</li>
+            <hr />
+            <li>de R$ 1.000,00 até R$ 1.499,99 (306)</li>
+            <hr />
+            <li>de R$ 1.500,00 até R$ 1.999,99 (297)</li>
+            <hr />
+            <li>de R$ 2.000,00 até R$ 2.499,99 (207)</li>
+            <hr />
+            <li>de R$ 2.500,00 até R$ 2.999,99 (118)</li>
+            <hr />
+            <li>de R$ 3.000,00 até R$ 3.999,99 (76)</li>
+            <hr />
+            <li>de R$ 4.000,00 até R$ 6.999,99 (81)</li>
+            <hr />
+            <li>de R$ 7.000,00 até R$ 9.999,99 (26)</li>
+            <hr />
+            <li>de R$ 10.000,00 até R$ 19.999,99 (31)</li>
+            <hr />
+            <li>de R$ 20.000,00 até R$ 49.999,99 (8)</li>
+            <hr />
+            <li>de R$ 50.000,00 até R$ 99.999,99 (1)</li>
+            <hr />
+          </ul>
+        </div>
+
+        <div class="calçado-sec preco">
+          <h3>Filtrar por Marca</h3>
+          <ul>
+          <li> Nike (966)</li>
+          <hr>
+          <li> ADIDAS (285)</li>
+          <hr>
+          <li> Puma (22)</li>
+          <hr>
+          <li> Vans (19)</li>
+          <hr>
+          <li> Asics (18)</li>
+          <hr>
+          <li> New Balance (18)</li>
+          <hr>
+          <li> Louis Vuitton (16)</li>
+          <hr>
+          <li> Mizuno (11)</li>
+          <hr>
+          <li> Reebok (10)</li>
+          <hr>
+          <li> Saucony (10)</li>
+          <hr>
+          <li> Gucci (8)</li>
+          <hr>
+          <li> BAPE (7)</li>
+          <hr>
+          <li> FILA (4)</li>
+          <hr>
+          <li> HAVAIANAS (4)</li>
+          <hr>
+          <li> OFF-WHITE (4)</li>
+          <hr>
+          <li> Pineapple Co. (3)</li>
+          <hr>
+          <li> Timberland (3)</li>
+          <hr>
+          <li> Converse (2)</li>
+          <hr>
+          <li> DREW HOUSE (2)</li>
+          <hr>
+          <li> Diadora (2)</li>
+          <hr>
+          <li> SUPREME (2)</li>
+          <hr>
+          <li> Anti Social Social Club (1)</li>
+          <hr>
+          <li> BALENCIAGA (1)</li>
+          <hr>
+          <li> BURBERRY (1)</li>
+          <hr>
+          <li> Bottega Veneta (1)</li>
+          <hr>
+          <li> DOLCE & GABANNA (1)</li>
+          <hr>
+          <li> Giuseppe Zanotti (1)</li>
+          <hr>
+          <li> Polo Ralph Lauren (1)</li>
+          <hr>
+          <li> REVENGE X STORM (1)</li>
+          <hr>
+          <li> RICH OWENS (1)</li>
+          <hr>
+          <li> Vert Shoes (1)</li>
+          <hr>
+          <li> WARREN LOTAS (1)</li>
+          <hr>
+</ul>
+        </div>
+      </section>
+      <section class="col-11 col-s-12 tenis-cards">
+        <section class="col-12 pagcel">
+          <div class="paginas2">
+            <a href="#">&laquo;</a>
+            <a class="active" href="..#">1</a>
+            <a  href="..#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+    
+        </section>
+        <div class="escolher">
+          <div class="comeco">
+            
+          <div class="ordem">
+        <button class="btn-escolher"> Escolher ordem 
+          <i class="fa fa-caret-down"></i>
+        </button>
+       
+       
+        <div class="list-drop">
+          <ul>
+          <li><i class="fa fa-sort-alpha-asc"></i> <a href="#"> Ordem alfabética</a></li>
+         <li><i class="	fa fa-shopping-cart"></i>
+           <a href="#">  Mais vendidos</a></li>
+          <li><i class="fa fa-money"></i><a href="#"> Menor preço</a></li>
+          <li><i class="fa fa-money"></i><a href="#">  Maior preço</a></li>
+        </ul>
+        </div>
+      
+      </div>
+      <div class="filtrar2">
+        <button class="btn-escolher">Filtrar
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <section class="lateral2 col-3 col-s-12">
+          <div class="calçado-sec">
+            <h3>Calçados</h3>
+            <p>botas</p>
+            <p>chinelos e sandálias</p>
+            <p>tênis</p>
+          </div>
+          <div class="calçado-sec filtrar3  preco">
+            <h3>Filtrar por Tamanho</h3>
+            <ul>
+              <li class="tamanho"><span> p </span></li>
+              <li class="tamanho"><span> M </span></li>
+              <li class="tamanho"><span> G </span></li>
+              <li class="tamanho"><span> GG </span></li>
+              <li class="tamanho"><span> 17 </span></li>
+              <li class="tamanho"><span> 18 </span></li>
+              <li class="tamanho"><span> 20 </span></li>
+              <li class="tamanho"><span> 21 </span></li>
+              <li class="tamanho"><span> 22 </span></li>
+              <li class="tamanho"><span> 24 </span></li>
+              <li class="tamanho"><span> 25 </span></li>
+              <li class="tamanho"><span> 26 </span></li>
+              <li class="tamanho"><span> 27 </span></li>
+              <li class="tamanho"><span> 28 </span></li>
+              <li class="tamanho"><span> 29 </span></li>
+              <li class="tamanho"><span> 30 </span></li>
+              <li class="tamanho"><span> 31 </span></li>
+              <li class="tamanho"><span> 32 </span></li>
+              <li class="tamanho"><span> 33 </span></li>
+              <li class="tamanho"><span> 34 </span></li>
+              <li class="tamanho"><span> 35 </span></li>
+              <li class="tamanho"><span> 36 </span></li>
+              <li class="tamanho"><span> 37 </span></li>
+              <li class="tamanho"><span> 38 </span></li>
+              <li class="tamanho"><span> 39 </span></li>
+              <li class="tamanho"><span> 40 </span></li>
+              <li class="tamanho"><span> 41 </span></li>
+              <li class="tamanho"><span> 42 </span></li>
+              <li class="tamanho"><span> 43 </span></li>
+              <li class="tamanho"><span> 44 </span></li>
+              <li class="tamanho"><span> 45 </span></li>
+              <li class="tamanho"><span> 46 </span></li>
+              <li class="tamanho"><span> 47 </span></li>
+              <li class="tamanho"><span> 48 </span></li>
+            </ul>
+          </div>
+  
+          <div class="calçado-sec preco">
+            <h3>Filtrar por Marca</h3>
+            <ul>
+              <li>de R$ 70,00 até R$ 99,99 (3)</li>
+              <hr />
+              <li>de R$ 100,00 até R$ 199,99 (8)</li>
+              <hr />
+              <li>de R$ 200,00 até R$ 399,99 (42)</li>
+              <hr />
+              <li>de R$ 400,00 até R$ 599,99 (83)</li>
+              <hr />
+              <li>de R$ 600,00 até R$ 999,99 (142)</li>
+              <hr />
+              <li>de R$ 1.000,00 até R$ 1.499,99 (306)</li>
+              <hr />
+              <li>de R$ 1.500,00 até R$ 1.999,99 (297)</li>
+              <hr />
+              <li>de R$ 2.000,00 até R$ 2.499,99 (207)</li>
+              <hr />
+              <li>de R$ 2.500,00 até R$ 2.999,99 (118)</li>
+              <hr />
+              <li>de R$ 3.000,00 até R$ 3.999,99 (76)</li>
+              <hr />
+              <li>de R$ 4.000,00 até R$ 6.999,99 (81)</li>
+              <hr />
+              <li>de R$ 7.000,00 até R$ 9.999,99 (26)</li>
+              <hr />
+              <li>de R$ 10.000,00 até R$ 19.999,99 (31)</li>
+              <hr />
+              <li>de R$ 20.000,00 até R$ 49.999,99 (8)</li>
+              <hr />
+              <li>de R$ 50.000,00 até R$ 99.999,99 (1)</li>
+              <hr />
+            </ul>
+          </div>
+  
+          <div class="calçado-sec preco">
+            <h3>Filtrar por Marca</h3>
+            <ul>
+            <li> Nike (966)</li>
+            <hr>
+            <li> ADIDAS (285)</li>
+            <hr>
+            <li> Puma (22)</li>
+            <hr>
+            <li> Vans (19)</li>
+            <hr>
+            <li> Asics (18)</li>
+            <hr>
+            <li> New Balance (18)</li>
+            <hr>
+            <li> Louis Vuitton (16)</li>
+            <hr>
+            <li> Mizuno (11)</li>
+            <hr>
+            <li> Reebok (10)</li>
+            <hr>
+            <li> Saucony (10)</li>
+            <hr>
+            <li> Gucci (8)</li>
+            <hr>
+            <li> BAPE (7)</li>
+            <hr>
+            <li> FILA (4)</li>
+            <hr>
+            <li> HAVAIANAS (4)</li>
+            <hr>
+            <li> OFF-WHITE (4)</li>
+            <hr>
+            <li> Pineapple Co. (3)</li>
+            <hr>
+            <li> Timberland (3)</li>
+            <hr>
+            <li> Converse (2)</li>
+            <hr>
+            <li> DREW HOUSE (2)</li>
+            <hr>
+            <li> Diadora (2)</li>
+            <hr>
+            <li> SUPREME (2)</li>
+            <hr>
+            <li> Anti Social Social Club (1)</li>
+            <hr>
+            <li> BALENCIAGA (1)</li>
+            <hr>
+            <li> BURBERRY (1)</li>
+            <hr>
+            <li> Bottega Veneta (1)</li>
+            <hr>
+            <li> DOLCE & GABANNA (1)</li>
+            <hr>
+            <li> Giuseppe Zanotti (1)</li>
+            <hr>
+            <li> Polo Ralph Lauren (1)</li>
+            <hr>
+            <li> REVENGE X STORM (1)</li>
+            <hr>
+            <li> RICH OWENS (1)</li>
+            <hr>
+            <li> Vert Shoes (1)</li>
+            <hr>
+            <li> WARREN LOTAS (1)</li>
+            <hr>
+  </ul>
+          </div>
+        </section>
+
+
+      </div>
+    </div>
+
+      <div class="paginas">
+        <a href="#">&laquo;</a>
+        <a class="active" href="..#">1</a>
+        <a  href="..#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </div>
+     <section>
+
+      <div class="titulo-principal">
+        <h2 class="titulos">Lançamentos</h2>
+        <div class="linhas"></div>
+      </div>
+
+      <div class="grid-container-main col-8 col">
+
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" onmouseover="mf(this)" onmouseout="md(this)">
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+          </div>
+
+          <div class="compre">
+            <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+            <p>compre agora </p>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" onmouseover="adicionar()" onmouseout="adicionar()">
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+          </div>
+
+          <div class="compre">
+            <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+            <p>compre agora </p>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" onmouseover="adicionar()" onmouseout="adicionar()">
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+          </div>
+
+          <div class="compre">
+            <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+            <p>compre agora </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+
+        <div class="card">
+          <div class="img-card">
+            <img src="../fotos/jordan_tenis.webp" alt="/" >
+          </div>
+          <div class="preco2">
+            <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+            <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+            <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <img src="../fotos/carrinho-de-compras-cheio.png" alt="">
+              <p>compre agora </p>
+            </div>
+        </div>
+
+
+        </div>
+     </section>
+
+      </section>
+    </section>
+    
+    <section class="col-12">
+      <div class="paginas2">
+        <a href="#">&laquo;</a>
+        <a class="active" href="..#">1</a>
+        <a  href="..#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+
+    </section>
+ 
+     <section class="email">
+  <div class="receba">
+    <h3>RECEBA TODAS AS NOSSAS <span>NOVIDADES</span></h3>
+<p>Cadastre seu email e receba ofertas exclusiva</p>
+  </div>
+
+  <div class="inp-email">
+     <input type="email" name="email" id="email" placeholder="    exemplo@gmail.com">
+
+     <button class="buscar">Enviar</button>
+  </div>
+
+  <div class="inp-email2">
+    <input type="email" name="email" id="email" placeholder="    exemplo@gmail.com">
+
+    <div class="inp-email-button">
+      <button class="buscar">Enviar</button>
+    </div>
+
+    
+ </div>
+         
+      </section>
+    
+      <div class="ajuda-fix col-1">
+        <img src="../fotos/pensando.png" alt="">
+
+        <div class="alguma">
+          <p>alguma duvida?</p>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <section class="grid-container-footer">
+    <div class="sobre-o-site">
+    <h3>  Sobre a loja</h3>
+<p>Atuando no mercado desde 2022, com a finalidade de disponibilizar aos nossos clientes itens de lançamentos exclusivos, limitados ou de venda exclusiva no exterior, somos especializados em tênis e itens de streetwear e objetos colecionáveis em que na maioria dos casos esgotam de imediato no lançamento. Nosso objetivo é criar um mercado de revenda, onde você se sinta seguro ao comprar e vender produtos de forma autêntica.</p>
+    </div>
+    <div class="tipo-pagamento">
+      <img src="../fotos/bandeiras-cartoes-credito.webp" alt="">
+    </div>
+<div class="redesociais">
+  <img src="../fotos/rede/facebook.png" alt="/">
+  <img src="../fotos/rede/instagram.png" alt="/">
+  <img src="../fotos/rede/pinterest.png" alt="/">
+  <img src="../fotos/rede/telegram.png" alt="/">
+  <img src="../fotos/rede/whatsapp.png" alt="/">
+  <img src="../fotos/rede/youtube.png" alt="/">
+  
+
+</div>
+</section>
+<section class="fim">
+  <p>Copyright © 2020 sem nome . Todos os direitos reservados.
+    CNPJ 44.674.812/0001-98</p>
+    <p></p>
+
+</section>
+  </footer>
+  </body>
+</html>

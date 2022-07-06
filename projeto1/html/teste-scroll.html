@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+   <style>
+
+.container{
+    /* border: 2px solid #1b1b1b; */
+
+  overflow: auto;
+}
+    .grid-container-main {
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    gap:30px;
+    /* background-color: #2196F3; */
+    width: 1113.970px;
+    padding: 20px;
+    /* border: 2px solid blueviolet; */
+    /* width: 450px; */  
+    
+    
+  
+
+  }
+
+  .card{
+    text-align: center;
+    padding: 5px;
+    /* border: 1px solid black; */
+  }
+  .card:hover{
+    box-shadow:0px 0 8px 2px #2c2c2c70;
+ 
+  }
+  .preco{
+    margin-top: 30px;
+  }
+  .preco p{
+    margin-top:10px;
+  }
+  .preco span{
+    font-weight: 600;
+  }
+  .preco:hover{
+    opacity: 0.5;
+  }
+  .compre{
+    display: flex;
+    background-color: #1b1b1b;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 6px;
+    margin: 50px 0 20px 0 ;
+  }
+ 
+  .compre img{
+    width: 32px;
+    padding: 5px;
+    margin-right: 20px; 
+  }
+
+  .img-card{
+    justify-content: center;
+    height: 180px;
+    padding: 5px;
+  
+  }  
+  .valor{
+    font-size: 25px;
+    font-weight:600;
+  }
+  .container{
+    margin: auto;
+    float: none; 
+  }
+.container img{
+    width: 100%;
+    height: auto;
+}
+/* Works on Firefox */
+.container{
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 0, 0) rgb(255, 255, 255);
+}
+
+/* Works on Chrome, Edge, and Safari */
+.container::-webkit-scrollbar {
+  width:1px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  border: 6px solid rgb(255, 255, 255);
+  width: 5px;
+}
+   </style>
+</head>
+<body>
+ <section class="container col-11 col-t-11 col-s-12">
+
+      <section class="col-12">
+        <div class="titulo-principal">
+          <h2 class="titulos">Lançamenos</h2>
+          <div class="linhas"></div>
+        </div>
+
+        <div class="grid-container-main">
+
+          <div class="card">
+            <div class="img-card">
+              <img src="/fotos/jordan_tenis.webp" alt="/" onmouseover="mf(this)" onmouseout="md(this)">
+            </div>
+            <div class="preco">
+              <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+              <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+              <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <!-- <img src="/fotos/carrinho-de-compras-cheio.png" alt=""> -->
+              <p>compre agora </p>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="img-card">
+              <img src="/fotos/jordan_tenis.webp" alt="/" onmouseover="adicionar()" onmouseout="adicionar()">
+            </div>
+            <div class="preco">
+              <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+              <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+              <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <!-- <img src="/fotos/carrinho-de-compras-cheio.png" alt=""> -->
+              <p>compre agora </p>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="img-card">
+              <img src="/fotos/jordan_tenis.webp" alt="/" onmouseover="adicionar()" onmouseout="adicionar()">
+            </div>
+            <div class="preco">
+              <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+              <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+              <p class="valor"> R$ 2.370,00</p>
+            </div>
+
+            <div class="compre">
+              <!-- <img src="/fotos/carrinho-de-compras-cheio.png" alt=""> -->
+              <p>compre agora </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-card">
+              <img src="/fotos/jordan_tenis.webp" alt="/" onmouseover="adicionar()" onmouseout="adicionar()">
+            </div>
+            <div class="preco">
+              <p>NIKE - Air Jordan 1 Low OG "Mystic Navy" -NOVO-</p>
+
+              <p> <strong>12x</strong> de <strong>R$ 197,50</strong> </p>
+              <p class="valor"> R$ 2.370,00</p>
+              </div>
+
+              <div class="compre">
+                <!-- <img src="/fotos/carrinho-de-compras-cheio.png" alt=""> -->
+                <p>compre agora </p>
+              </div>
+          </div>
+
+          </div>
+      </section>
+
+    </section>
+
+    
+</body>
+</html>

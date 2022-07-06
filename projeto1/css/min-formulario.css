@@ -1,0 +1,124 @@
+
+*{
+    border: 0;
+}
+body{
+  background-color:#1e1e1e ;
+   
+}
+
+main{
+    display: flex;
+    color: white;
+    font-weight:500;
+    min-height:70vh ;
+
+}
+.form-main{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form-main h1{
+    font-family: nav;
+    margin-top: 2rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+
+}
+.rede-social{
+    display: flex;
+    align-items: center;
+    
+}
+.rede-social a:not(:first-child){
+    margin-left: 3rem;  
+}
+.linha_ou{
+    margin-top: 1rem;
+}
+
+.linha_ou span{
+    font-family: nav;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+.linha_ou span::before, .linha_ou span::after{
+position: absolute;
+content: '';
+height: 1px;
+width: 100px;
+bottom: 50%;
+right: 50px;
+background-color:rgba(255, 255, 255, 0.3);
+}
+.linha_ou span::after{
+    left:50px;
+}
+.form-main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .form-main form label{
+    display: flex;
+    flex-direction: column;
+ } 
+ .form-main form label span{
+    font-family: nav;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+ }
+
+ .form-main form input{
+    background-color: black;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem ;
+    margin-top: .5rem;
+    outline: none;
+    color: white;
+    font-size: 1rem;border: 1px solid #232323;
+    border-radius: 8px;
+ }
+ #btn-enviar{
+    cursor: pointer;
+    width: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-radius: 32px;
+    background-color: crimson;
+    color: white;
+    font-size: 1rem;
+    transition: .5s;
+ }
+ #btn-enviar:hover{
+    background-color:rgb(162, 9, 39);
+ }
+
+
+ 
+ .img-form {
+   display: flex;
+    align-items: center;
+    
+    
+ }
+ .img-form .circulo{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(45deg, #ae0808, #3b0101);
+    clip-path: circle(40% at right 30%);
+    z-index: -1;
+
+ }
+ 

@@ -1,0 +1,149 @@
+.grid-container-footer{
+    display:grid;
+      grid-template-columns: auto auto auto;
+      gap:30px;
+      background-color: #1b1b1b;
+      color: white;
+      align-items: center;
+      padding: 20px;
+  
+  }
+  .receba span{
+    color: #c70000;
+  }
+  .tipo-pagamento{
+    margin: auto;
+    width: 70%;
+  }
+  .tipo-pagamento img{
+    width: 100%;
+  }
+  .sobre-o-site{
+    text-align: justify;
+  }
+  .sobre-o-site h3{
+    text-align: center;
+    font-family: nav;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+  }
+  .redesociais{
+    display: grid;
+    gap:5px;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: 40px 40px 40px ;
+    align-items: center;
+  
+  
+  }
+  .redesociais img{
+    margin: 5px;
+  }
+  .fim{
+    background-color: #c70000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  @media only screen and (max-width: 1000px) {.grid-container-footer{
+    display:grid;
+      grid-template-columns: auto auto auto;
+      gap:30px;
+      background-color: #1b1b1b;
+      color: white;
+      align-items: center;
+      padding: 20px;
+  
+  }
+  .receba span{
+    color: #c70000;
+  }
+  .tipo-pagamento{
+    margin: auto;
+    width: 100%;
+  }
+  .tipo-pagamento img{
+    width: 100%;
+  }
+  .sobre-o-site{
+    text-align: justify;
+  }
+  .sobre-o-site h3{
+    text-align: center;
+    font-family: nav;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+  }
+  .redesociais{
+    display: grid;
+    gap:5px;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: 40px 40px 40px ;
+    align-items: center;
+  
+  
+  }
+  .redesociais img{
+    margin: 5px;
+  }
+  .fim{
+    background-color: #c70000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }}
+  
+  @media only screen and (max-width: 450px) {.grid-container-footer{
+    display:block;
+    padding: 5px;
+      grid-template-columns: auto auto auto;
+      gap:30px;
+      background-color: #1b1b1b;
+      color: white;
+      align-items: center;
+      padding: 20px;
+  
+  }
+  .receba span{
+    color: #c70000;
+  }
+  .tipo-pagamento{
+    margin: auto;
+    margin-top:20px;
+    width: 100%;
+  }
+  .tipo-pagamento img{
+    width: 100%;
+  }
+  .sobre-o-site{
+    text-align: justify;
+    margin-top:20px;
+  }
+  .sobre-o-site h3{
+    text-align: center;
+    font-family: nav;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+  }
+  .redesociais{
+    display: grid;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    gap:5px;
+    grid-template-columns:40px 40px 40px;
+    grid-template-rows: 40px 40px 40px ;
+  
+  }
+  .redesociais img{
+    margin: 5px;
+  }
+  .fim{
+    background-color: #c70000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }}

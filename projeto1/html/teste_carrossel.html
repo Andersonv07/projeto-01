@@ -1,0 +1,317 @@
+
+<style>
+body{
+    background-color: black;
+}
+    .slider{
+  margin: 0 auto;
+  width: 800px; 
+  height: 400px;
+  overflow: hidden;
+
+}
+.slides{
+  display: flex;
+   width: 400%; 
+  height: 200px;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    position: relative;
+    width: 25%;  
+    transition: 2s; 
+}
+.slide img{
+    width: 800px;
+    height: 200px;
+}
+.manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked~.first{
+    margin-left: 0;
+}
+#radio2:checked~.first{
+    margin-left: -25%;
+}
+#radio3:checked~.first{
+    margin-left: -50%;
+}
+#radio4:checked~.first{
+    margin-left: -75%;
+}
+.auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+}
+.auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked~.auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked~.auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked~.auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked~.auto .auto-btn4{
+    background-color: #fff;
+    transition: 1s;
+}
+
+/* texto brilhante */
+
+.bla {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+</style>
+
+
+<section> 
+<!-- texto brilhante-->   
+ <h3 class="bla">isso é muito top e bla bla bla bla bla bla bla bla bla</h3>
+</section>
+<section class="slider ">
+    
+    <div class="slides">
+
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+
+
+      <div class="slide first">
+        <img src="/fotos/50_desconto.gif" alt="banner1">
+      </div>
+      <div class="slide">
+        <img src="/fotos/50_desconto.gif" alt="banner2">
+      </div>
+      <div class="slide">
+        <img src="/fotos/new_balance.webp" alt="banner3">
+      </div>
+      <div class="slide">
+        <img src="/fotos/75_desconto.webp
+        " alt="banner4">
+      </div>
+
+      <div class="auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+
+      </div>
+    </div>
+
+
+    <div class="manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+  </section>
+
+  <script>
+    let slide = 1
+    document.getElementById("radio1").checked = true
+
+
+
+setInterval(function(){
+nextFoto()
+},2000)
+
+function nextFoto(){
+slide++
+if(slide>4){
+    slide = 1
+}
+document.getElementById("radio"+slide).checked = true
+}
+</script>
+
+
+
+
+
+<!-- primeiro carrossel funl  -->
+
+<section class="slider">
+  <div class="slides">
+    <input type="radio" name="radio-btn" id="radio1" />
+    <input type="radio" name="radio-btn" id="radio2" />
+    <input type="radio" name="radio-btn" id="radio3" />
+    <input type="radio" name="radio-btn" id="radio4" />
+
+    <div class="slide first">
+      <img src="/fotos/cactus_jack.webp" alt="banner1" />
+    </div>
+    <div class="slide">
+      <img src="/fotos/50_desconto.gif" alt="banner2" />
+    </div>
+    <div class="slide">
+      <img src="/fotos/new_balance.webp" alt="banner3" />
+    </div>
+    <div class="slide">
+      <img
+        src="/fotos/75_desconto.webp
+      "
+        alt="banner4"
+      />
+    </div>
+
+    <div class="auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+    </div>
+  </div>
+
+  <div class="manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div>
+</section>
+
+<!-- fim -->
+<!-- css do car -->
+<section>
+  .slider{
+    margin: 0 auto;
+    width: 100%; 
+    height: 210px;
+    overflow: hidden;
+  
+  }
+  .slides{
+    display: flex;
+     width: 100%; 
+    height: auto;
+  }
+  .slides input{
+      display: none;
+  }
+  .slide{
+      position: relative;
+      width: 100%;  
+      transition: 2s; 
+  }
+  .slide img{
+      width: 1140px;
+      height: 200px;
+  }
+  .manual{
+      position: absolute;
+      width: 1140px;
+      margin-top:-20px;
+      display: flex;
+      justify-content: center;
+  }
+  .manual-btn{
+      border: 2px solid #fff;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 1s;
+  }
+  .manual-btn:not(:last-child){
+      margin-right: 40px;
+  }
+  .manual-btn:hover{
+      background-color: #fff;
+  }
+  #radio1:checked~.first{
+      margin-left: 0;
+  }
+  #radio2:checked~.first{
+      margin-left: -100%;
+  }
+  #radio3:checked~.first{
+      margin-left: -200%;
+  }
+  #radio4:checked~.first{
+      margin-left: -300%;
+  }
+  .auto div{
+      border: 2px solid #fff;
+     
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 1s;
+  }
+  .auto {
+      position: absolute;
+      width: 1140px;
+      margin: auto;
+      margin-top: 180px;
+      display: flex;
+      justify-content: center;
+  }
+  .auto div:not(:last-child){
+      margin-right: 40px;
+  }
+  #radio1:checked~.auto .auto-btn1{
+      background-color: #fff;
+  }
+  #radio2:checked~.auto .auto-btn2{
+      background-color: #fff;
+  }
+  #radio3:checked~.auto .auto-btn3{
+      background-color: #fff;
+  }
+  #radio4:checked~.auto .auto-btn4{
+      background-color: #fff;
+  }
+</section>
+<!-- fim do css -->
